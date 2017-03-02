@@ -18,7 +18,7 @@ brew tap caskroom/versions || true
 brew install brew-cask
 
 # usefull stuff
-PACKAGES="htop-osx heroku-toolbelt fpp gnupg httpie packer pwgen curl fasd gradle  wget redis diffmerge unrar git-extras peco"
+PACKAGES="htop-osx heroku-toolbelt fpp gnupg httpie packer pwgen curl fasd gradle  wget redis diffmerge unrar git-extras peco cookiecutter ghostscript jq maven mysql ngrok packer python python3 s3cmd tmux watchman zsh asciinema ansible"
 
 for pkg in $PACKAGES; do
     if brew list -1 | grep -q "^${pkg}\$"; then
